@@ -1,8 +1,23 @@
 !include MUI2.nsh
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Japanese.nlf"
 Name "Moons Apps On Electron"
 OutFile "Setup_MonnsApps_Electron.exe"
 InstallDir "$PROGRAMFILES\Moons Apps On Electron"
+XPStyle on
+!insertmacro MUI_PAGE_WELCOME
+!insertmacro MUI_PAGE_DIRECTORY
+!insertmacro MUI_PAGE_INSTFILES
+!insertmacro MUI_PAGE_FINISH
+!insertmacro MUI_UNPAGE_WELCOME
+!insertmacro MUI_UNPAGE_CONFIRM
+!insertmacro MUI_UNPAGE_INSTFILES
+!insertmacro MUI_UNPAGE_FINISH
+!insertmacro MUI_LANGUAGE "Japanese"
+!define MUI_ABORTWARNING
+Var Checkbox_InstallDocs
+Var Dialog_Options
+Var InstallDocs
+Var Label_DescriptionOptions
+
 Page directory 
 Page instfiles
 !define APPDIR "MoonsApps-win32-x64\"

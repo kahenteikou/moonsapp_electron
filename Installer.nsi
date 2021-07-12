@@ -18,8 +18,6 @@ Var Dialog_Options
 Var InstallDocs
 Var Label_DescriptionOptions
 
-Page directory 
-Page instfiles
 !define APPDIR "MoonsApps-win32-x64\"
 Section
   SetOutPath "$INSTDIR"
